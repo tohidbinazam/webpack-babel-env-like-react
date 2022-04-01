@@ -9,6 +9,8 @@ const dev_list = document.querySelector('.dev-list');
 all_devs();
 function all_devs() {
   axios.get('http://localhost:5050/devs').then((res) => {
+    dev_list.innerHTML = '';
+
     res.data.map((data) => {
       let { name, number, photo } = data;
 
