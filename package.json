@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --watch",
     "start": "webpack serve",
-    "js": "json-server --watch db.json --port 5050"
+    "server": "json-server --watch db.json --port 5050"
   },
   "keywords": [],
   "author": "",
