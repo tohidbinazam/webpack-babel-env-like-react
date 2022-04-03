@@ -3,6 +3,7 @@ import './index.css';
 import './main.scss';
 import 'boxicons/css/boxicons.min.css';
 import axios from 'axios';
+import picture from './picture.jpg';
 
 const dev_list = document.querySelector('.dev-list');
 
@@ -17,6 +18,7 @@ function all_devs() {
       dev_list.innerHTML += `
       <div class="col-xl-3">
           <div class="card text-center shadow">
+            <img class="card-img mb-3" src="${picture}" alt="" />
             <img class="card-img" src="${photo}" alt="" />
             <div class="card-body">
               <h3><i class="bx bxs-hot"></i>${name}</h3>
